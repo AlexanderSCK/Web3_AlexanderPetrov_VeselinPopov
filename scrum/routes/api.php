@@ -16,3 +16,16 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+//Show all projects
+Route::middleware('auth:api')->get('projects','ProjectController@apiIndex');
+//Show single project
+Route::middleware('auth:api')->get('project/{project_id}','ProjectController@apiShow');
+//Create project
+Route::middleware('auth:api')->post('project','ProjectController@apiStore');
+//Update project
+Route::middleware('auth:api')->put('project','ProjectController@apiStore');
+//Delete project
+Route::middleware('auth:api')->delete('project/{project_id}','ProjectController@apiDestroy');
+
+
+

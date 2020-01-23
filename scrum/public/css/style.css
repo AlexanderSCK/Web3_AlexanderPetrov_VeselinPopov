@@ -1,0 +1,38 @@
+.depres {
+    padding-bottom: 0.25em;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.depres:hover {
+    font-weight: bolder;
+    transform: inherit;
+    -webkit-transform: scale(1.4);
+    text-decoration: none;
+    color: inherit;
+}
+.edit-icon {
+    text-decoration: none;
+    display: inline;
+}
+.paper-container {
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: -5px 5px 10px #dcdcdc;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 230px;
+}
+.paper-header {
+    text-align: center;
+}
+.is-completed-task {
+    background-color: lightgreen !important;
+}
+#chart {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

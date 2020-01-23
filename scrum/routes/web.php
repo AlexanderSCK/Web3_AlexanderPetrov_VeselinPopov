@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resources(['projects'=> 'ProjectController',
+                 'profile' => 'ProfileController',
+                 'projectTask' => 'ProjectTasksController'
+            ]);  
+Route::get('/showdata', 'CsvController@showdata');     
+Route::get('/export', 'CsvController@export'); 
+Route::post('/projects/{project}/tasks', 'ProjectTasksController@store');

@@ -1,2 +1,4 @@
-*
-!.gitignore
+# uploads/*
+# profileimg/*
+# !watermarks/
+# !watermarks/watermark.png
